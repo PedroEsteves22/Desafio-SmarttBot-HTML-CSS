@@ -1,0 +1,157 @@
+.modal-container{
+  height: 100vh;
+  width: 100%;
+  background: rgba(0,203,197,.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container.ativo{
+  display: flex;
+}
+
+.modal{
+  background: #FFFFFF;
+  min-width: 350px;
+  padding: 20px 35px;
+  text-align: left;
+  border-radius: 5px;
+}
+
+@keyframes modal{
+  from{
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ativo .modal{
+  animation: modal .3s forwards;
+}
+
+.modal-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-flex h3{
+  color: black;
+  align-self: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.fechar{
+  font-size: 19px;
+  color: #5F5D60;
+  cursor: pointer;
+}
+
+.modal h2{
+  font-size: 32px;
+  font-weight: 700;
+  color: #5F5D60;
+  margin-top: 18px;
+}
+
+.modal p{
+  font-size: 12px;
+  font-weight: 400;
+  color: #888689;
+  margin-top: 5px;
+  margin-bottom: 18px;
+}
+
+.modal label{
+  color: #343234;
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  margin: 8px 0;
+}
+
+.modal input{
+  width: 100%;
+  padding: 13px 12px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  outline: 0;
+  border: 1px solid #888689;
+  border-radius: 2px;
+}
+
+.modal input::placeholder{
+  color: #888689;
+}
+
+.estrategia-campo1{
+  padding: 13px 20px 3px 20px;
+  margin: 7px 0;
+  cursor: pointer;
+  background-color: #FF4501;
+  border-radius: 2px;
+}
+
+.estrategia-campo2{
+  padding: 13px 20px 3px 20px;
+  border: 1px solid #888689;
+  margin: 7px 0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.estrategia-campo1 p{
+  font-size: 15px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.estrategia-campo2 p{
+  font-size: 15px;
+  font-weight: 500;
+  color: #888689;
+}
+
+.seleciona{
+  font-size: 16px;
+  font-weight: 500;
+  color: #343234;
+  margin: 15px 0;
+}
+
+.botao{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.botao1{
+  font-size: 12px;
+  font-weight: 400;
+  background-color: white;
+  cursor: pointer;
+  padding: 5px 15px;
+  border: 1px solid #888689;
+  color: #888689;
+  border-radius: 2px;
+}
+
+.botao2{
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #00B39D;
+  cursor: pointer;
+  padding: 5px 15px;
+  border: 0;
+  color: #FFFFFF;
+  border-radius: 2px;
+}
